@@ -165,7 +165,7 @@ sleep 5
 
 # Get container IP
 set +e
-max_attempts=5
+max_attempts=10
 attempt=1
 IP=""
 while [[ $attempt -le $max_attempts ]]; do
