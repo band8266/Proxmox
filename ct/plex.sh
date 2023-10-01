@@ -60,8 +60,8 @@ UPD=$(whiptail --backtitle "Proxmox VE Helper Scripts" --title "SUPPORT" --radio
 header_info
 if [ "$UPD" == "1" ]; then
 msg_info "Updating ${APP} LXC"
-apt-get update &>/dev/null
-apt-get -y upgrade &>/dev/null
+##apt-get update &>/dev/null
+##apt-get -y upgrade &>/dev/null
 msg_ok "Updated ${APP} LXC"
 exit
 fi
